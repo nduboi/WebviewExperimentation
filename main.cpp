@@ -66,6 +66,7 @@ int main(int ac, char *argv[])
             return "";
         });
         w.run();
+        w.terminate();
     } catch (const webview::exception &e) {
         std::cerr << e.what() << '\n';
         return 1;
